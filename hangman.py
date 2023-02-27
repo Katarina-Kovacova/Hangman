@@ -9,9 +9,6 @@ print(ran_word)
 hidden_ran_word = '*' * len(ran_word)
 print(hidden_ran_word)
 
-
-
-
 #ask player to guess a letter
 
 while True:
@@ -26,7 +23,10 @@ while True:
 hidden_ran_word = list(hidden_ran_word)
 
 #check if letter in secret word
-def is_in_ran_word():
+def is_letter_in_ran_word():
+	if guess in ran_word:
+		print(f'The letter {guess} is in the guessed word')
+is_letter_in_ran_word()
 	
 
 
