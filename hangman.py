@@ -21,9 +21,10 @@ def is_letter_in_ran_word():
 		    print('No such letter in this word!')
 	
 def guess_position():
-	for idx, val in enumerate(ran_word, start = 1):
-		if guess == val:
-			print(val, idx,'. position')
+	#if guess in ran_word:
+		for idx, val in enumerate(ran_word, start = 1):
+			if guess == val:
+				print(val, idx,'. position')
 
 #ask player to guess a letter
 def guess_letter():
